@@ -19,7 +19,7 @@ struct LessonSeven: View {
                 .frame(width: 250, height: 250)
         }
         .onAppear() {
-            withAnimation(Animation.linear(duration: 2.0).repeatForever()) {
+            withAnimation(Animation.easeInOut.repeatForever()) {
                 isAnimating.toggle()
             }
         }
